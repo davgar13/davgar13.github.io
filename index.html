@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#030405">
+  <meta name="description" content="Una pequeña galaxia hecha de estrellas, luz y flores amarillas.">
+  <title>Para ti · Una galaxia de amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <canvas id="space"></canvas>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+  <!-- INTRO CINEMÁTICA -->
+  <div class="intro" id="intro">
+    <div class="intro-stars"></div>
+    <div class="intro-content">
+      <div class="intro-symbol">✦</div>
+      <p class="intro-overline">HE CREADO UN PEQUEÑO UNIVERSO</p>
+      <h1>Hay algo<br><em>para ti.</em></h1>
+      <p class="intro-sub">Toca para entrar.</p>
+      <button class="enter" id="enter">
+        <span class="enter-ring"></span>
+        <span class="enter-text">Entrar</span>
+      </button>
+    </div>
+    <div class="intro-bottom">Ponte los audífonos · baja la luz · mira el cielo</div>
+  </div>
+
+  <main id="page">
+    <header class="nav">
+      <span class="brand">✦ <b>PARA TI</b></span>
+      <span class="date">UNA NOCHE ENTRE ESTRELLAS</span>
+    </header>
+
+    <!-- HERO / GALAXIA -->
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">CAPÍTULO 01 · EL UNIVERSO</p>
+        <h2>No sé cuántas<br>estrellas <em>existen.</em></h2>
+        <p class="hero-text">
+          Pero entre todas ellas, hice una pequeña galaxia para guardar
+          un detalle que quería darte.
+        </p>
+        <button class="scroll-button" data-scroll="#flowers">
+          <span>Descubrir</span><i>↓</i>
+        </button>
+      </div>
+
+      <div class="galaxy-wrap" id="galaxyWrap">
+        <div class="galaxy" id="galaxy">
+          <div class="nebula n1"></div>
+          <div class="nebula n2"></div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+
+          <div class="planet">
+            <div class="planet-light"></div>
+            <div class="planet-surface"></div>
+          </div>
+
+          <!-- Flores orbitales -->
+          <div class="orb-flower f1"><span class="petals"></span><b></b></div>
+          <div class="orb-flower f2"><span class="petals"></span><b></b></div>
+          <div class="orb-flower f3"><span class="petals"></span><b></b></div>
+          <div class="orb-flower f4"><span class="petals"></span><b></b></div>
+          <div class="orb-flower f5"><span class="petals"></span><b></b></div>
+          <div class="orb-flower f6"><span class="petals"></span><b></b></div>
+
+          <div class="shooting-star ss1"></div>
+          <div class="shooting-star ss2"></div>
+          <div class="shooting-star ss3"></div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01</span><div></div><span>DESLIZA</span>
+      </div>
+    </section>
+
+    <!-- FLORES -->
+    <section class="flowers" id="flowers">
+      <div class="section-intro reveal">
+        <p class="eyebrow">CAPÍTULO 02 · FLORES</p>
+        <h2>Y entonces<br>aparecieron <em>ellas.</em></h2>
+        <p>
+          Amarillas, porque algunas luces simplemente tienen ese color.
+        </p>
+      </div>
+
+      <div class="flower-stage reveal">
+        <div class="moon-haze"></div>
+        <div class="ground-glow"></div>
+
+        <div class="css-flower flower-a">
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <span></span>
+        </div>
+
+        <div class="css-flower flower-b">
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <span></span>
+        </div>
+
+        <div class="css-flower flower-c">
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <span></span>
+        </div>
+
+        <div class="css-flower flower-d">
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <span></span>
+        </div>
+
+        <div class="css-flower flower-e">
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <span></span>
+        </div>
+
+        <div class="stage-caption">
+          <span>FLORES AMARILLAS</span>
+          <small>un detalle que habla sin palabras</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter-section" id="letter">
+      <div class="letter reveal">
+        <div class="letter-corner">✦</div>
+        <p class="letter-to">PARA TI</p>
+        <h2>Mi amotitoo:</h2>
+        <p class="letter-main">
+          Estas flores son como tú:
+          <em>brillantes, radiantes y llenas de alegría.</em>
+        </p>
+        <div class="letter-line"></div>
+        <p class="letter-body">
+          Gracias por iluminar mis días. Por las conversaciones,
+          por las sonrisas, por cada instante que termina convirtiéndose
+          en un recuerdo que quiero conservar.
+        </p>
+        <p class="letter-body">
+          Tal vez esto sea solo una página, unas flores y algunas estrellas,
+          pero detrás de cada una hay un pensamiento para ti.
+        </p>
+        <button class="open-note" id="openNote">
+          <span>Hay algo más</span><b>✦</b>
+        </button>
+        <div class="secret" id="secret">
+          <div class="secret-star">✦</div>
+          <p>Si pudiera regalarte una estrella por cada vez que pienso en ti,
+             el cielo ya no tendría espacio.</p>
+          <strong>— Y todavía me faltarían algunas.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSTELACIÓN -->
+    <section class="constellation" id="constellation">
+      <div class="constellation-copy reveal">
+        <p class="eyebrow">CAPÍTULO 03 · CONSTELACIÓN</p>
+        <h2>Algunas personas<br>se vuelven <em>hogar.</em></h2>
+        <p>
+          No porque estén siempre cerca, sino porque dejan una luz
+          que permanece incluso cuando todo alrededor se apaga.
+        </p>
+      </div>
+
+      <div class="constellation-map reveal" id="constellationMap">
+        <svg viewBox="0 0 700 420" preserveAspectRatio="xMidYMid meet">
+          <path d="M95 300 L190 170 L315 250 L420 100 L535 210 L625 125"
+                class="constellation-line"/>
+          <path d="M190 170 L260 80 L420 100" class="constellation-line faint"/>
+          <circle cx="95" cy="300" r="4"/><circle cx="190" cy="170" r="5"/>
+          <circle cx="315" cy="250" r="4"/><circle cx="420" cy="100" r="6"/>
+          <circle cx="535" cy="210" r="4"/><circle cx="625" cy="125" r="5"/>
+          <circle cx="260" cy="80" r="3"/>
+        </svg>
+        <div class="constellation-word">TÚ</div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="finale" id="finale">
+      <div class="final-stars"></div>
+      <div class="final-orbit"></div>
+      <p class="eyebrow">CAPÍTULO 04 · Y SIEMPRE</p>
+      <h2>Entre tantas estrellas,<br><em>te elego a ti una y mil veces.</em></h2>
+      <p class="final-small">Gracias por ser parte de mi universo.</p>
+      <button class="heart" id="heart" aria-label="Enviar corazones">♥</button>
+      <div id="particles"></div>
+    </section>
+
+    <footer>
+      <span> BY DAVID GARCIA · TE AMO MATTEO LOZADA</span>
+      <span>✦</span>   
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
